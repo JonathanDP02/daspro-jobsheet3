@@ -24,7 +24,7 @@ public class Kafe07 {
     double nominalBayar = totalHarga - (diskon*totalHarga);
 
     System.out.println("Keanggotaab pelanggan " + keanggotaan);
-    System.out.println("Item pembelian " + jmKopi + " kopi, " + jmTeh + " teh, " + jmRoti + " roti");
+    System.out.println("Item pembelian " + jmKopi + " kopi, " + jmTeh + " teh, " + jmRoti + " ttroti");
     System.out.println("Nominal bayar Rp " + nominalBayar);
 
 
