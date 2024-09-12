@@ -11,7 +11,6 @@ public class Listrik07 {
         int penggunaan = input.nextInt();
 
         double tagihan = penggunaan*tarif_per_kwh;
-
         System.out.println("Total tagihan anda: Rp " + tagihan);
 
     if (penggunaan > 500) {
