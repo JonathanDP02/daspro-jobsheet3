@@ -21,7 +21,9 @@ public class Kafe07 {
     jmRoti = input.nextInt();
 
     double totalHarga = (jmKopi*hargaKopi) + (jmTeh*hargaTeh) + (jmRoti*hargaRoti);
+    double totalByte = (byte) totalHarga;
     double nominalBayar = totalHarga - (diskon*totalHarga);
+    double nominalint = (int) nominalBayar;
 
     System.out.println("Keanggotaab pelanggan " + keanggotaan);
     System.out.println("Item pembelian " + jmKopi + " kopi, " + jmTeh + " teh, " + jmRoti + " ttroti");

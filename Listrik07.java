@@ -3,14 +3,20 @@ import java.util.Scanner;
 public class Listrik07 {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int penggunaanListrik, tarif = 1500;
-        boolean batasKwh;
+        int jmlListrik, tarif, batas = 500;
+        boolean statusTagihan;
 
-        penggunaanListrik = input.nextInt();
+        System.out.print("Penggunaan listrik (dalam kwh) = ");
+        jmlListrik = sc.nextInt();
 
-        System.out.println("Total tagihan = ");
+        tarif = jmlListrik*1500;
+        statusTagihan = jmlListrik > batas;
+
+        System.err.println("Jumlah tagihan: Rp" + tarif );
+        System.out.println("Status tagihan melibihi batas 500 kwh: " + statusTagihan);
+        System.out.println("Jumlah tagihan : Rp" + tarif);
 
     }
     
